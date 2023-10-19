@@ -1,0 +1,20 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/onBoard1Fragment">
+    <fragment
+        android:id="@+id/onBoard1Fragment"
+        android:name="com.pali.estrellabet.presentation.fragment.OnBoard1Fragment"
+        android:label="fragment_on_board1"
+        tools:layout="@layout/fragment_on_board1" >
+        <action
+            android:id="@+id/action_onBoard1Fragment_to_onBoard2Fragment"
+            app:destination="@id/onBoard2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoard2Fragment"
+        android:name="com.pali.estrellabet.presentation.fragment.OnBoard2Fragment"
+        android:label="fragment_on_board2"
+        tools:layout="@layout/fragment_on_board2" />
+</navigation>
